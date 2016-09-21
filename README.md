@@ -10,9 +10,9 @@ This project is for an organization called the Association of Indian Students at
 
 I was part of the mentorship program team.
 The program aids in connecting incoming graduate Indian students with the current students.
-I realised as graduate students, spending time and effort in matching mentors to mentees manually was time consuming and the 
+I realised as graduate students, matching mentors to mentees manually was time consuming and the 
 process was being delayed. 
-I developed this tool to automate the process.
+I developed this tool to automate the process and save time.
 
 #Future:
 
