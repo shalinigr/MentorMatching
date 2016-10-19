@@ -120,7 +120,7 @@ namespace MentorMatching
 
         private void btnMatch_Click(object sender, EventArgs e)
         {           
-            //if (validate()) return;
+            if (validate()) return;
             Input objInput = new Input();
             objInput.MentorPath = txtMentorPath.Text.Trim();
             objInput.MenteePath = txtMenteePath.Text.Trim();
