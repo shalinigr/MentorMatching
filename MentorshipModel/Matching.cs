@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,20 +11,22 @@ namespace MentorshipModel
 {
     public class Matching
     {
-        //TODO:
-        /*Read from files and add to respective class objects
+        /*TODO:
+         * Read from files and add to respective class objects
          * perform match
          * add to MatchedClass List
          * return
          */
+
         #region Global Variables
         Dictionary<Department, List<Mentor>> _dicMentorDepartment = null;
         Dictionary<Department, List<Mentee>> _dicMenteeDepartment = null;
         List<Matched> _lstFinal = null;      
         public List<Matched> FinalList { get { return _lstFinal; } }
-        
+
         #endregion Global Variables
 
+        #region constructor
         public Matching(string mentorPath, string menteePath)
         {
             _dicMentorDepartment = new Dictionary<Department, List<Mentor>>();
@@ -34,6 +36,9 @@ namespace MentorshipModel
             populateMentees(menteePath, RoleType.Mentee);
             match();
         }
+        #endregion
+
+        #region private methods
         private Department setDept(string deptName)
         {
             Department dType;
@@ -157,6 +162,7 @@ namespace MentorshipModel
                 }
             }
         }
+        #endregion
     }
     public class Mentor
     {
@@ -180,6 +186,7 @@ namespace MentorshipModel
     }
     public class Matched
     {
+        #region properties
         public string MentorName { get; set; }
         public Department MentorDept { get; set; }
         public string MentorUscId { get; set; }
@@ -188,6 +195,7 @@ namespace MentorshipModel
         public Department MenteeDept { get; set; }
         public string MenteeUscId { get; set; }
         public string MenteeContact { get; set; }
+        #endregion
     }
 }
 
