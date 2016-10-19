@@ -1,4 +1,4 @@
-﻿namespace MentorMatching
+namespace MentorMatching
 {
     partial class frmMatchResults
     {
