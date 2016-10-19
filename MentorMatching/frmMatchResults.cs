@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,11 +15,15 @@ namespace MentorMatching
 {
     public partial class frmMatchResults : Form
     {
+        #region constructor
         public frmMatchResults(List<Matched> lstFinal)
         {
             InitializeComponent();
             populateUI(lstFinal);
         }
+        #endregion
+
+        #region private methods
         private void populateUI(List<Matched> lstFinal)
         {
             if (lstFinal != null)
@@ -33,7 +37,7 @@ namespace MentorMatching
 
         private void btnEmail_Click(object sender, EventArgs e)
         {
-            //TODO:
+           // TODO:
             /*Email everyone*/
             //var fromAddress = new MailAddress("from@gmail.com", "From Name");
             //var toAddress = new MailAddress("to@example.com", "To Name");
@@ -59,5 +63,6 @@ namespace MentorMatching
             //    smtp.Send(message);
             //}
         }
+        #endregion
     }
 }
