@@ -34,14 +34,6 @@ namespace MentorMatching
             this.btnMatch = new System.Windows.Forms.Button();
             this.errProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.spltContPanels = new System.Windows.Forms.SplitContainer();
-            this.txtMenteeEmail = new System.Windows.Forms.TextBox();
-            this.txtMenteeContact = new System.Windows.Forms.TextBox();
-            this.txtMenteeDept = new System.Windows.Forms.TextBox();
-            this.txtMenteeName = new System.Windows.Forms.TextBox();
-            this.lblMenteeEmail = new System.Windows.Forms.Label();
-            this.lblMenteeDept = new System.Windows.Forms.Label();
-            this.lblMenteeContact = new System.Windows.Forms.Label();
-            this.lblMenteeName = new System.Windows.Forms.Label();
             this.txtMentorEmailID = new System.Windows.Forms.TextBox();
             this.txtMentorContact = new System.Windows.Forms.TextBox();
             this.txtMentorDept = new System.Windows.Forms.TextBox();
@@ -54,10 +46,18 @@ namespace MentorMatching
             this.btnBrosweMentor = new System.Windows.Forms.Button();
             this.txtMentorPath = new System.Windows.Forms.TextBox();
             this.lblMentor = new System.Windows.Forms.Label();
-            this.btnMenteeBrowse = new System.Windows.Forms.Button();
-            this.txtMenteePath = new System.Windows.Forms.TextBox();
-            this.lblMentee = new System.Windows.Forms.Label();
+            this.txtMenteeEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtMenteeContact = new System.Windows.Forms.TextBox();
+            this.btnMenteeBrowse = new System.Windows.Forms.Button();
+            this.txtMenteeDept = new System.Windows.Forms.TextBox();
+            this.txtMenteePath = new System.Windows.Forms.TextBox();
+            this.txtMenteeName = new System.Windows.Forms.TextBox();
+            this.lblMentee = new System.Windows.Forms.Label();
+            this.lblMenteeEmail = new System.Windows.Forms.Label();
+            this.lblMenteeDept = new System.Windows.Forms.Label();
+            this.lblMenteeName = new System.Windows.Forms.Label();
+            this.lblMenteeContact = new System.Windows.Forms.Label();
             this.pnlBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spltContPanels)).BeginInit();
@@ -141,70 +141,6 @@ namespace MentorMatching
             this.spltContPanels.Size = new System.Drawing.Size(820, 165);
             this.spltContPanels.SplitterDistance = 410;
             this.spltContPanels.TabIndex = 1;
-            // 
-            // txtMenteeEmail
-            // 
-            this.txtMenteeEmail.Location = new System.Drawing.Point(275, 130);
-            this.txtMenteeEmail.Name = "txtMenteeEmail";
-            this.txtMenteeEmail.Size = new System.Drawing.Size(33, 20);
-            this.txtMenteeEmail.TabIndex = 62;
-            // 
-            // txtMenteeContact
-            // 
-            this.txtMenteeContact.Location = new System.Drawing.Point(119, 130);
-            this.txtMenteeContact.Name = "txtMenteeContact";
-            this.txtMenteeContact.Size = new System.Drawing.Size(33, 20);
-            this.txtMenteeContact.TabIndex = 61;
-            // 
-            // txtMenteeDept
-            // 
-            this.txtMenteeDept.Location = new System.Drawing.Point(275, 96);
-            this.txtMenteeDept.Name = "txtMenteeDept";
-            this.txtMenteeDept.Size = new System.Drawing.Size(33, 20);
-            this.txtMenteeDept.TabIndex = 60;
-            // 
-            // txtMenteeName
-            // 
-            this.txtMenteeName.Location = new System.Drawing.Point(120, 96);
-            this.txtMenteeName.Name = "txtMenteeName";
-            this.txtMenteeName.Size = new System.Drawing.Size(33, 20);
-            this.txtMenteeName.TabIndex = 59;
-            // 
-            // lblMenteeEmail
-            // 
-            this.lblMenteeEmail.AutoSize = true;
-            this.lblMenteeEmail.Location = new System.Drawing.Point(207, 133);
-            this.lblMenteeEmail.Name = "lblMenteeEmail";
-            this.lblMenteeEmail.Size = new System.Drawing.Size(46, 13);
-            this.lblMenteeEmail.TabIndex = 58;
-            this.lblMenteeEmail.Text = "Email ID";
-            // 
-            // lblMenteeDept
-            // 
-            this.lblMenteeDept.AutoSize = true;
-            this.lblMenteeDept.Location = new System.Drawing.Point(207, 99);
-            this.lblMenteeDept.Name = "lblMenteeDept";
-            this.lblMenteeDept.Size = new System.Drawing.Size(62, 13);
-            this.lblMenteeDept.TabIndex = 57;
-            this.lblMenteeDept.Text = "Department";
-            // 
-            // lblMenteeContact
-            // 
-            this.lblMenteeContact.AutoSize = true;
-            this.lblMenteeContact.Location = new System.Drawing.Point(33, 133);
-            this.lblMenteeContact.Name = "lblMenteeContact";
-            this.lblMenteeContact.Size = new System.Drawing.Size(83, 13);
-            this.lblMenteeContact.TabIndex = 56;
-            this.lblMenteeContact.Text = "Mentee Contact";
-            // 
-            // lblMenteeName
-            // 
-            this.lblMenteeName.AutoSize = true;
-            this.lblMenteeName.Location = new System.Drawing.Point(33, 99);
-            this.lblMenteeName.Name = "lblMenteeName";
-            this.lblMenteeName.Size = new System.Drawing.Size(74, 13);
-            this.lblMenteeName.TabIndex = 55;
-            this.lblMenteeName.Text = "Mentee Name";
             // 
             // txtMentorEmailID
             // 
@@ -305,31 +241,12 @@ namespace MentorMatching
             this.lblMentor.TabIndex = 40;
             this.lblMentor.Text = "Mentor File Path";
             // 
-            // btnMenteeBrowse
+            // txtMenteeEmail
             // 
-            this.btnMenteeBrowse.Location = new System.Drawing.Point(342, 20);
-            this.btnMenteeBrowse.Name = "btnMenteeBrowse";
-            this.btnMenteeBrowse.Size = new System.Drawing.Size(32, 23);
-            this.btnMenteeBrowse.TabIndex = 48;
-            this.btnMenteeBrowse.Text = "...";
-            this.btnMenteeBrowse.UseVisualStyleBackColor = true;
-            this.btnMenteeBrowse.Click += new System.EventHandler(this.btnMenteeBrowse_Click);
-            // 
-            // txtMenteePath
-            // 
-            this.txtMenteePath.Location = new System.Drawing.Point(103, 22);
-            this.txtMenteePath.Name = "txtMenteePath";
-            this.txtMenteePath.Size = new System.Drawing.Size(271, 20);
-            this.txtMenteePath.TabIndex = 47;
-            // 
-            // lblMentee
-            // 
-            this.lblMentee.AutoSize = true;
-            this.lblMentee.Location = new System.Drawing.Point(13, 25);
-            this.lblMentee.Name = "lblMentee";
-            this.lblMentee.Size = new System.Drawing.Size(87, 13);
-            this.lblMentee.TabIndex = 46;
-            this.lblMentee.Text = "Mentee File Path";
+            this.txtMenteeEmail.Location = new System.Drawing.Point(275, 130);
+            this.txtMenteeEmail.Name = "txtMenteeEmail";
+            this.txtMenteeEmail.Size = new System.Drawing.Size(33, 20);
+            this.txtMenteeEmail.TabIndex = 62;
             // 
             // label1
             // 
@@ -340,6 +257,89 @@ namespace MentorMatching
             this.label1.TabIndex = 49;
             this.label1.Text = "Please provide the necessary column details for the files to be processed.";
             // 
+            // txtMenteeContact
+            // 
+            this.txtMenteeContact.Location = new System.Drawing.Point(119, 130);
+            this.txtMenteeContact.Name = "txtMenteeContact";
+            this.txtMenteeContact.Size = new System.Drawing.Size(33, 20);
+            this.txtMenteeContact.TabIndex = 61;
+            // 
+            // btnMenteeBrowse
+            // 
+            this.btnMenteeBrowse.Location = new System.Drawing.Point(342, 20);
+            this.btnMenteeBrowse.Name = "btnMenteeBrowse";
+            this.btnMenteeBrowse.Size = new System.Drawing.Size(32, 23);
+            this.btnMenteeBrowse.TabIndex = 48;
+            this.btnMenteeBrowse.Text = "...";
+            this.btnMenteeBrowse.UseVisualStyleBackColor = true;
+            this.btnMenteeBrowse.Click += new System.EventHandler(this.btnMenteeBrowse_Click);
+            // 
+            // txtMenteeDept
+            // 
+            this.txtMenteeDept.Location = new System.Drawing.Point(275, 96);
+            this.txtMenteeDept.Name = "txtMenteeDept";
+            this.txtMenteeDept.Size = new System.Drawing.Size(33, 20);
+            this.txtMenteeDept.TabIndex = 60;
+            // 
+            // txtMenteePath
+            // 
+            this.txtMenteePath.Location = new System.Drawing.Point(103, 22);
+            this.txtMenteePath.Name = "txtMenteePath";
+            this.txtMenteePath.Size = new System.Drawing.Size(271, 20);
+            this.txtMenteePath.TabIndex = 47;
+            // 
+            // txtMenteeName
+            // 
+            this.txtMenteeName.Location = new System.Drawing.Point(120, 96);
+            this.txtMenteeName.Name = "txtMenteeName";
+            this.txtMenteeName.Size = new System.Drawing.Size(33, 20);
+            this.txtMenteeName.TabIndex = 59;
+            // 
+            // lblMentee
+            // 
+            this.lblMentee.AutoSize = true;
+            this.lblMentee.Location = new System.Drawing.Point(13, 25);
+            this.lblMentee.Name = "lblMentee";
+            this.lblMentee.Size = new System.Drawing.Size(87, 13);
+            this.lblMentee.TabIndex = 46;
+            this.lblMentee.Text = "Mentee File Path";
+            // 
+            // lblMenteeEmail
+            // 
+            this.lblMenteeEmail.AutoSize = true;
+            this.lblMenteeEmail.Location = new System.Drawing.Point(207, 133);
+            this.lblMenteeEmail.Name = "lblMenteeEmail";
+            this.lblMenteeEmail.Size = new System.Drawing.Size(46, 13);
+            this.lblMenteeEmail.TabIndex = 58;
+            this.lblMenteeEmail.Text = "Email ID";
+            // 
+            // lblMenteeDept
+            // 
+            this.lblMenteeDept.AutoSize = true;
+            this.lblMenteeDept.Location = new System.Drawing.Point(207, 99);
+            this.lblMenteeDept.Name = "lblMenteeDept";
+            this.lblMenteeDept.Size = new System.Drawing.Size(62, 13);
+            this.lblMenteeDept.TabIndex = 57;
+            this.lblMenteeDept.Text = "Department";
+            // 
+            // lblMenteeName
+            // 
+            this.lblMenteeName.AutoSize = true;
+            this.lblMenteeName.Location = new System.Drawing.Point(33, 99);
+            this.lblMenteeName.Name = "lblMenteeName";
+            this.lblMenteeName.Size = new System.Drawing.Size(74, 13);
+            this.lblMenteeName.TabIndex = 55;
+            this.lblMenteeName.Text = "Mentee Name";
+            // 
+            // lblMenteeContact
+            // 
+            this.lblMenteeContact.AutoSize = true;
+            this.lblMenteeContact.Location = new System.Drawing.Point(33, 133);
+            this.lblMenteeContact.Name = "lblMenteeContact";
+            this.lblMenteeContact.Size = new System.Drawing.Size(83, 13);
+            this.lblMenteeContact.TabIndex = 56;
+            this.lblMenteeContact.Text = "Mentee Contact";
+            // 
             // frmMentorship
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -347,6 +347,7 @@ namespace MentorMatching
             this.ClientSize = new System.Drawing.Size(820, 199);
             this.Controls.Add(this.spltContPanels);
             this.Controls.Add(this.pnlBottom);
+            this.MaximizeBox = false;
             this.Name = "frmMentorship";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
